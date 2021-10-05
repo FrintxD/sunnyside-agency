@@ -17,7 +17,7 @@ body{
 }
 /*Header*/
 
-header, .egg-container{
+header, .egg-container, .graphic-container, .photography-container{
     width:100%;
     height: 67.487684729vh;
 
@@ -76,19 +76,18 @@ header, .egg-container{
     display:none;
 }
 
-.table:before{
+.table:after{
     position: absolute;
 
     content:"";
 
-    margin-left:81%;
+    margin-left:78.7%;
     margin-top:-6.6%;
 
     width: 0;
     height: 0;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
-    border-right:25px solid white;
+    border-top: 9.2vw solid transparent;
+    border-right:9.2vw solid white;
 }
 
 @keyframes popup{
@@ -208,7 +207,7 @@ button{
     background-color:#ffffff;
 }
 
-.title{
+.title,.graphic-container h1, .photography-content-container h1{
 
     color:#000000;
 
@@ -220,11 +219,13 @@ button{
     margin-top:-10%;
 
 }
-.paragraph{
+.paragraph, .graphic-container p, .photography-content-container p{
 
     color:hsl(213, 9%, 39%);
 
     font-size:3.6vw;
+
+    line-height: 180%;
 
     text-align: center;
 
@@ -273,5 +274,45 @@ button{
     background-size: cover;
 }
 
-/*Stand out section*/
+/*Graphic Design section*/
+.graphic-container{
+    width: 100%;
+    height: 58.004926108vh;
 
+    background-image: url("images/mobile/image-graphic-design.jpg");
+}
+.graphic-content-container{
+    margin-top:80%;
+
+    width: 88%;
+
+    margin-left:auto ;
+    margin-right: auto;
+}
+
+.graphic-content-container h1, .graphic-content-container p{
+    color:hsl(167, 40%, 24%);
+}
+
+/*.photography-container*/
+
+.photography-container{
+    display: flex;
+    justify-content:flex-end;
+    align-items: flex-end;
+
+    width: 100%;
+    height: 58.004926108vh;
+
+    background-image: url("images/mobile/image-photography.jpg");
+}
+
+.photography-content-container{
+    margin-top:10%;
+    margin-bottom: 10%;
+}
+.photography-content-container h1, .photography-content-container p{
+    color:hsl(198, 62%, 26%);
+}
+
+/*Testemunials section*/
