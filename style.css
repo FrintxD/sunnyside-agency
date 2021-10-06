@@ -191,7 +191,7 @@ button{
     background-image: url("images/mobile/image-transform.jpg");
 }
 
-/*About*/
+/*About and stand-out section*/
 .about, .stand-out{
     display: flex;
     flex-direction: column;
@@ -200,14 +200,15 @@ button{
     align-items: center;
 
     width: 80%;
-    height:42.487684729vh;
+    height:57.63546798vh;
 
     margin:auto;
 
     background-color:#ffffff;
 }
 
-.title,.graphic-container h1, .photography-content-container h1{
+.title,.graphic-container h1, .photography-content-container h1, #testemunials-title
+{
 
     color:#000000;
 
@@ -219,7 +220,7 @@ button{
     margin-top:-10%;
 
 }
-.paragraph, .graphic-container p, .photography-content-container p{
+.paragraph, .graphic-container p, .photography-content-container p, .testemunials-container p, .testemunials-container h3{
 
     color:hsl(213, 9%, 39%);
 
@@ -275,15 +276,18 @@ button{
 }
 
 /*Graphic Design section*/
-.graphic-container{
+.graphic-container, .photography-container{
+    display: flex;
+    align-items: flex-end;
+
     width: 100%;
-    height: 58.004926108vh;
+    height: 78.81773399vh;
 
     background-image: url("images/mobile/image-graphic-design.jpg");
+    background-position: initial;
 }
 .graphic-content-container{
-    margin-top:80%;
-
+    margin-bottom:10%;
     width: 88%;
 
     margin-left:auto ;
@@ -297,13 +301,6 @@ button{
 /*.photography-container*/
 
 .photography-container{
-    display: flex;
-    justify-content:flex-end;
-    align-items: flex-end;
-
-    width: 100%;
-    height: 58.004926108vh;
-
     background-image: url("images/mobile/image-photography.jpg");
 }
 
@@ -316,3 +313,57 @@ button{
 }
 
 /*Testemunials section*/
+
+#testemunials-title{
+    font-size:4vw;
+
+    letter-spacing: 1.2vw;
+
+    color:#AAACAC;
+}
+
+.testemunials, .testemunials-container{
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 165.517241379vh;
+}
+
+.testemunials-container{
+    width:79.5%;
+    height: 37.192118227vh;
+
+    margin-top: 20%;
+}
+
+.testemunials-container img{
+    width:24.5283019%;
+
+    border-radius: 100%;
+}
+
+.testemunials-container p{
+    font-size: 3.5vw;
+
+    margin-bottom:10%;
+}
+
+.testemunials-container h2{
+    color:#000000;
+
+    font-size:4vw;
+    font-family: 'Fraunces', serif;
+}
+
+.testemunials-container h3{
+    font-size:2.8vw;
+    font-weight: 500;
+
+    margin-top:2%;
+}
+
