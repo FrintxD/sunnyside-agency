@@ -17,7 +17,7 @@ body{
 }
 /*Header*/
 
-header, .egg-container, .graphic-container, .photography-container{
+.header-container, .egg-container, .graphic-container, .photography-container{
     width:100%;
     height:70.935960591vh;
 
@@ -25,27 +25,41 @@ header, .egg-container, .graphic-container, .photography-container{
     background-image: url("images/mobile/image-header.jpg");
     background-size:cover;
     background-position: center;
+
     overflow: hidden;
 }
 /*Positioning icon-hamburguer and logo*/
-.logo-icon-container{
+
+header{
+    /*Icon and logo in a row*/
     display: flex;
-    justify-content: center;
-    width:100%;
+    flex-direction: row;
+
+    justify-content: end;
+    align-items: center;
+
+    width: 100%;
+    height:7.75862069vh;
+}
+
+.logo-container{
+    width:33.5%;
+
+    margin-right:47%;
+
+    margin-top:4.679802956vh;
 }
 
 #logo{
-    width:33.6%;
-
-    margin-right:47%;
-    margin-top:10%;
+    width:100%;
 }
 #icon-hamburger{
     width:6.93333333333333%;
 
-    margin-top:10%;
-
     cursor: pointer;
+
+    margin-right:5.75%;
+    margin-top:4.679802956vh;
 }
 
 /*Menu*/
@@ -55,14 +69,20 @@ header, .egg-container, .graphic-container, .photography-container{
 }
 
 .open{
-    display:grid;
+    position: absolute;
 
-    grid-template-rows: repeat(4, 20%);
+    left:6%;
+    top:10%;
+
+    display:flex;
+
+    flex-direction: column;
 
     justify-content: center;
+    align-items:center ;
 
-    width: 87.73333333333333%;
-    height: 37.68472906403941vh;
+    width: 88%;
+    height: 40.39408867vh;
 
     background-color:white;
 
@@ -70,19 +90,21 @@ header, .egg-container, .graphic-container, .photography-container{
     margin-top:15%;
 
     animation: popup 1s ease;
+
+    z-index: 21;
 }
 
 .close{
     display:none;
 }
 
-.table:after{
+.open:before{
     position: absolute;
 
     content:"";
 
-    margin-left:78.7%;
-    margin-top:-6.6%;
+    margin-left:78.9vw;
+    margin-top:-315px;
 
     width: 0;
     height: 0;
@@ -102,15 +124,13 @@ header, .egg-container, .graphic-container, .photography-container{
 
 
 .table li{
-    position: relative;
-
-    top:50%;
-
-    display:block;
+    list-style: none;
 
     text-align: center;
 
-    height:4vh;
+    margin-top:5.541871921vh;
+
+    width: 100%;
 }
 
 .table li a, .footer-links a{
@@ -118,7 +138,7 @@ header, .egg-container, .graphic-container, .photography-container{
 
     color: hsl(232, 10%, 55%);
 
-    font-size:2.2em;
+    font-size:2em;
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
 
@@ -127,12 +147,7 @@ header, .egg-container, .graphic-container, .photography-container{
 
 
 button{
-    position: relative;
-
-    left:-40%;
-    top:39%;
-
-    width: 180.5531914893617%;
+    width: 41.7613636%;
     height: 8.142857142857143vh;
 
     font-size:18px;
@@ -148,6 +163,10 @@ button{
 
     background-color:hsl(51, 100%, 49%);
 }
+
+.button-li{
+    margin-bottom:5.541871921vh;
+}
 /*Title design*/
 
 .text-arrow{
@@ -161,6 +180,8 @@ button{
     height: 24.507389163vh;
 
     margin-top:14.778325123vh;
+
+    z-index: 20;
 }
 
 .text-arrow h1{
@@ -192,6 +213,13 @@ button{
 }
 
 /*About and stand-out section*/
+.stand-content, .about-content{
+    display: flex;
+    flex-direction: column;
+
+    width: 80%;
+}
+
 .about, .stand-out{
     display: flex;
     flex-direction: column;
@@ -199,10 +227,8 @@ button{
     justify-content: center;
     align-items: center;
 
-    width: 80%;
+    width: 100%;
     height:57.63546798vh;
-
-    margin:auto;
 
     background-color:#ffffff;
 }
@@ -220,7 +246,7 @@ button{
     margin-top:-10%;
 
 }
-.paragraph, .graphic-container p, .photography-content-container p, .testemunials-container p, .testemunials-container h3{
+.paragraph, .photography-graphic-container-paragraph{
 
     color:hsl(213, 9%, 39%);
 
@@ -244,6 +270,8 @@ button{
     font-size:3.5vw;
 
     letter-spacing: 0.4vw;
+
+    margin-inline: auto;
 }
 
 #learn-more:after, #learn-more-stand-out:after{
@@ -279,6 +307,7 @@ button{
 .graphic-container, .photography-container{
     display: flex;
     align-items: flex-end;
+    justify-content: center;
 
     width: 100%;
     height: 78.81773399vh;
@@ -374,7 +403,7 @@ button{
 .gallery{
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows:repeat(2, 49.9%);
+    grid-template-rows:repeat(2, 49.8%);
 
     width:100%;
     height:49.507389163vh;
@@ -437,4 +466,210 @@ footer{
 
 .social a{
     margin-left:16.3841808%;
+}
+
+/*Break Points*/
+@media (min-width:500px){
+    /*Header*/
+    #icon-hamburger{
+        display: none;
+    }
+    .header-container{
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        width: 100%;
+        height: 55.441176471vw;
+
+        background-image: url("images/desktop/image-header.jpg");
+        background-size:cover;
+        background-position:inherit;
+        background-repeat: no-repeat;
+    }
+    .header{
+        /*adding flexbox to positining*/
+        display: flex;
+        align-items: center;
+        justify-content:flex-start ;
+        flex-direction: row;
+
+        width:95%;
+        height: 6.617647059vw;
+    }
+    .logo-container{
+        width: 11.764705882vw;
+    }
+    #logo{
+        width:100%;
+    }
+
+    .table{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-direction: row;
+
+        width: 40.5%;
+        height:4.044117647vw;
+
+        margin-left: 0;
+
+        /*margin-top:-3.970588235vw;*/
+    }
+    .table li a{
+        font-size:1.2vw;
+
+        color:#ffffff;
+    }
+    .button-li{
+        display: flex;
+        align-items: end;
+
+        margin-bottom:0;
+    }
+
+    button{
+        position: relative;
+
+        width:120%;
+        height: 4.044117647vw;
+
+        font-size: 1vw;
+
+        color:#000000;
+        background-color: #ffffff;
+
+        transition: all 0.5s ease;
+
+        margin-bottom: 0;
+        margin-top:0;
+
+    }
+
+    button:hover{
+        background-color: #6ECDFF;
+        color:#ffffff;
+    }
+    /*Hero text*/
+
+    .text-arrow{
+        width:51.3235294%;
+        height: 35.277777778vh;
+
+        margin-top: 5.441176471vw;
+    }
+
+    .text-arrow h1{
+        color:#ffffff;
+
+        font-size:3vw;
+        font-family: 'Fraunces', serif;
+
+        letter-spacing: 0.5vw;
+
+        white-space: nowrap;
+    }
+
+    .text-arrow  a{
+        width: 2.8639456%;
+        height: 10.960591133vh;
+
+        margin-top:10%;
+    }
+    .text-arrow  a img{
+        width: 2vw;
+        height: 8.088235294vw;
+
+        margin-top:10%;
+    }
+
+    /*About + images gallery*/
+    .about-images-container{
+        display:grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, 41.838235294vw);
+
+        width: 100%;
+        height: 125.220588235vw;
+    }
+    /*Positioning container with css grid*/
+    .egg-container{
+        grid-column: 2/3;
+    }
+
+    .cup-image{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+
+    .about{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    /*New values*/
+    .egg-container, .cup-image{
+        width:100%;
+        height:41.838235294vw;
+    }
+    .about, .stand-out{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .about-content, .stand-content{
+        width: 60%;
+
+        margin:auto;
+    }
+    /*fonts*/
+    .title{
+        font-size:3.2vw;
+
+        text-align: start;
+    }
+    .paragraph{
+        font-size:1vw;
+        text-align: start;
+    }
+    #learn-more, #learn-more-stand-out{
+        font-size: 1vw;
+    }
+    #learn-more:after, #learn-more-stand-out:after{
+        width: 11%;
+        height: 0.9vh;
+
+        margin-left: -11vw;
+        margin-top:1.2vw;
+    }
+
+    /*.photography-graphic-containers*/
+    .photography-container{
+        background-image: url('images/desktop/image-photography.jpg');
+        background-position: center;
+    }
+    .graphic-container{
+        background-image: url('images/desktop/image-graphic-design.jpg');
+        background-position: center;
+    }
+
+    .photography-content-container h1, .graphic-content-container h1{
+        font-size: 2vw;
+    }
+    .photography-content-container, .graphic-content-container{
+        width: 50%;
+    }
+    .photography-graphic-container-paragraph{
+        font-size:1vw;
+
+        text-align: center;
+    }
+
 }
