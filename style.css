@@ -310,7 +310,7 @@ button{
     justify-content: center;
 
     width: 100%;
-    height: 78.81773399vh;
+    height: 100%;
 
     background-image: url("images/mobile/image-graphic-design.jpg");
     background-position: initial;
@@ -588,12 +588,14 @@ footer{
 
     /*About + images gallery*/
     .about-images-container{
+        position: relative;
+
         display:grid;
         grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(3, 41.838235294vw);
+        grid-template-rows: repeat(3, 41.81372549vw);
 
         width: 100%;
-        height: 125.220588235vw;
+        height:125.294117647vw;
     }
     /*Positioning container with css grid*/
     .egg-container{
@@ -672,4 +674,92 @@ footer{
         text-align: center;
     }
 
+    /*testemunials*/
+    .testemunials{
+        position: relative;
+
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        height: 53.823529412vw;
+        min-height:100%;
+
+        overflow: hidden;
+    }
+
+    #testemunials-title{
+        position: absolute;
+
+        font-size:1vw;
+
+        white-space: nowrap;
+
+        align-self: center;
+
+        margin-bottom: 20vw;
+
+        letter-spacing: 0.6vw;
+    }
+    .testemunials-container{
+        width: 22.9411765%;
+        height: 24.117647059vw;
+
+        margin-inline:3vw;
+        margin-bottom:10%;
+    }
+
+    .testemunials-container h2{
+        font-size:1.5vw ;
+
+        text-align: center;
+    }
+    .testemunials-container h3{
+        font-size:0.8vw ;
+
+        text-align: center;
+
+        white-space: wrap;
+    }
+    .testemunials-container p{
+        font-size:0.8vw ;
+
+        text-align: center;
+    }
+
+    /*galerry*/
+    .gallery{
+        display: flex;
+        flex-direction: row;
+
+        width: 100%;
+        height: 31.176470588vw;
+    }
+    /*Footer*/
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        height: 24,191176471vw;
+    }
+    #footer-logo{
+        width: 11.911764706vw;
+        margin-bottom:-2%;
+    }
+    .footer-links-container{
+        width: 20.4411765%;
+    }
+    .footer-links-container a{
+        font-size:1.2vw;
+    }
+    .social{
+        width: 11.8382353%;
+
+        margin-left:-3vw;
+    }
+    .social img{
+        width: 1.5vw;
+    }
 }
