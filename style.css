@@ -628,13 +628,18 @@ footer{
     .about-content, .stand-content{
         width: 60%;
 
+<<<<<<< Updated upstream
         margin:auto;
+=======
+        align-items: flex-start;
+>>>>>>> Stashed changes
     }
     /*fonts*/
     .title{
         font-size:3.2vw;
 
         text-align: start;
+<<<<<<< Updated upstream
     }
     .paragraph{
         font-size:1vw;
@@ -642,6 +647,20 @@ footer{
     }
     #learn-more, #learn-more-stand-out{
         font-size: 1vw;
+=======
+        
+    }
+    .paragraph{
+        font-size:1.8vw;
+        text-align: start;
+
+        line-height: 2vw;
+    }
+    #learn-more, #learn-more-stand-out{
+        font-size: 1vw;
+
+        margin-inline: 0;
+>>>>>>> Stashed changes
     }
     #learn-more:after, #learn-more-stand-out:after{
         width: 11%;
@@ -672,9 +691,17 @@ footer{
         width: 50%;
     }
     .photography-graphic-container-paragraph{
+<<<<<<< Updated upstream
         font-size:1vw;
 
         text-align: center;
+=======
+        font-size:1.8vw;
+
+        text-align: center;
+
+        line-height: 2vw;
+>>>>>>> Stashed changes
     }
 
     /*testemunials*/
@@ -693,7 +720,11 @@ footer{
     #testemunials-title{
         position: absolute;
 
+<<<<<<< Updated upstream
         font-size:1vw;
+=======
+        font-size:1.5vw;
+>>>>>>> Stashed changes
 
         white-space: nowrap;
 
@@ -724,13 +755,22 @@ footer{
         white-space: wrap;
     }
     .testemunials-container p{
+<<<<<<< Updated upstream
         font-size:0.8vw ;
 
         text-align: center;
+=======
+        font-size:1.8vw ;
+
+        text-align: center;
+
+        line-height: 2vw;
+>>>>>>> Stashed changes
     }
 
     /*galerry*/
     .gallery{
+<<<<<<< Updated upstream
         display: flex;
         flex-direction: row;
 
@@ -739,6 +779,17 @@ footer{
     }
     /*Footer*/
 
+=======
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+        grid-template-rows: 31.176470588vw;
+        width: 100%;
+    }
+    /*Footer*/
+    .gallery img{
+        width:100%
+    }
+>>>>>>> Stashed changes
     footer{
         display: flex;
         flex-direction: column;
