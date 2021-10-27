@@ -272,6 +272,7 @@ button{
     letter-spacing: 0.4vw;
 
     margin-inline: auto;
+
 }
 
 #learn-more:after, #learn-more-stand-out:after{
@@ -402,14 +403,15 @@ button{
 .gallery{
     display: grid;
     grid-template-columns: repeat(2, 50%);
-    grid-template-rows:repeat(2, 49.8%);
+    grid-template-rows:repeat(2, 50%);
 
     width:100%;
-    height:49.507389163vh;
+    height:106.666666667vw;
 }
 
 .gallery img{
     width: 100%;
+    height: 100%;
 }
 
 /*footer*/
@@ -421,7 +423,7 @@ footer{
     justify-content: center;
 
     width: 100%;
-    height: 41.748768473vh;
+    height: 99.2vw;
 
     background-color:#90D4C5;
 
@@ -626,9 +628,9 @@ footer{
     }
 
     .about-content, .stand-content{
-        width: 60%;
+        display: flex;
 
-        margin:auto;
+        width: 60%;
     }
     /*fonts*/
     .title{
@@ -642,6 +644,11 @@ footer{
     }
     #learn-more, #learn-more-stand-out{
         font-size: 1vw;
+
+        width: 100%;
+
+        white-space: nowrap;
+
     }
     #learn-more:after, #learn-more-stand-out:after{
         width: 11%;
@@ -655,7 +662,7 @@ footer{
     .photography-container{
         background-image: url('images/desktop/image-photography.jpg');
         background-position: center;
-        
+
         height: 100%;
     }
     .graphic-container{
@@ -736,7 +743,14 @@ footer{
 
         width: 100%;
         height: 31.176470588vw;
+
+        overflow: hidden;
     }
+    .gallery img{
+        width: 25%;
+        height: 100%;
+    }
+
     /*Footer*/
 
     footer{
@@ -745,7 +759,7 @@ footer{
         align-items: center;
         justify-content: center;
 
-        height: 24,191176471vw;
+        height: 24.191176471vw;
     }
     #footer-logo{
         width: 11.911764706vw;
