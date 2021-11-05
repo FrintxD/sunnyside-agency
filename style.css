@@ -250,7 +250,7 @@ button{
 
     color:hsl(213, 9%, 39%);
 
-    font-size:4vw;
+    font-size:3.2vw;
 
     line-height: 180%;
 
@@ -649,7 +649,7 @@ footer{
         white-space: nowrap;
     }
     .paragraph{
-        font-size:1vw;
+        font-size:2vw;
         text-align: start;
 
         line-height: 2vw;
